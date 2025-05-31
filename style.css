@@ -1,0 +1,87 @@
+body {
+  background: #FADCD9;
+  margin: 0;
+  font-family: 'Gilroy', Arial, sans-serif;
+}
+
+.work-frame {
+  width: 447px;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: #FADCD9;
+  box-sizing: border-box;
+  padding: 34px 0 0 24px;
+}
+
+.work-item {
+  position: relative;
+  width: 399px;
+  margin-bottom: 42px;
+  background: none;
+}
+
+.work-item .work-title {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #000;
+  margin: 0 0 0 0;
+  padding-top: 0;
+}
+
+.work-item.musea .work-image {
+  margin-top: 51px;
+  margin-bottom: 16px;
+}
+.work-item.musea img {
+  width: 399px;
+  height: 269px;
+  border-radius: 16px;
+  display: block;
+}
+.arrow-icon {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+}
+.work-border {
+  width: 399px;
+  height: 2px;
+  background: #F8AFA6;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+.work-item.elara, .work-item.verve, .work-item.zephyr {
+  height: 72px;
+  display: flex;
+  align-items: center;
+}
+.work-item.zephyr {
+  height: 30px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+  .work-frame {
+    width: 98vw;
+    padding-left: 2vw;
+  }
+  .work-item, .work-border {
+    width: 96vw;
+    min-width: 0;
+    max-width: 100vw;
+  }
+  .work-item.musea img {
+    width: 96vw;
+    height: auto;
+    max-width: 100vw;
+  }
+}
